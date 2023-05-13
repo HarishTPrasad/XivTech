@@ -1,0 +1,189 @@
+*{
+    margin: 0%;
+    padding: 0%;
+}
+
+
+
+.title{
+
+  
+    margin: 8%;
+    font-size: small;
+    padding: 2%;
+    margin-left: 12%;
+
+    font-family: -apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,"Helvetica Neue",Arial,"Noto Sans","Liberation Sans",sans-serif,"Apple Color Emoji","Segoe UI Emoji","Segoe UI Symbol","Noto Color Emoji";
+    font-size: 1rem;
+    font-weight: 400;
+    line-height: 1.5;
+    color: #212529;
+}
+
+
+
+.card {
+  width: 100%;
+  max-width: 1050px;
+  margin-top: 15px;
+ 
+  box-sizing: border-box;
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: row;
+  margin-left: 30vh;
+
+ 
+}
+
+.content {
+  flex: 1;
+ 
+  flex-direction: column;
+  gap: 10px;
+  flex-direction: row;
+}
+
+.text {
+  flex: 1;
+  flex: 1;
+  margin-right: 20px;
+  padding-right: 10%;
+}
+
+h2 {
+  margin: 0;
+  font-size: 80px ;
+}
+
+p {
+  font-size: 30px;
+  margin-top: 4%;
+  padding-right: 18%;
+}
+
+.image-wrapper {
+  flex: 1;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 200px;
+  padding: 1%;
+  margin: 1%;
+}
+
+.square-frame {
+
+  padding-bottom: 0;
+  width: 100%;
+  height: 390px;
+  position: relative;
+  overflow: hidden;
+  border-radius: 5px;
+  display: block;
+}
+
+.square-frame img {
+  /* ... */
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: center;
+  display: block;
+}
+
+.square-frame:before {
+  content: "";
+  display: block;
+  padding-top: 100%; 
+}
+
+.bottomtext{
+
+margin-left: 14%;
+padding-left: 10px;
+  font-size: 30px;
+}
+
+
+.cardcontainer{
+  display: flex;
+  justify-content: center;
+}
+
+.Getbtn{
+  padding: 20px;
+  padding-left: 50px;
+  margin: 5%;
+  padding-right: 50px;
+  margin-left: 14%;
+   font-size: 20px;
+   background-color: black;
+   color: white;
+}
+
+.footdiv{
+  height: 200px;
+  width: max-content;
+
+}
+
+
+
+@media screen and (max-width: 1200px) {
+  .title{
+    margin-left: 2%;
+  }
+ .card{
+  margin-left: 2%;
+  width: fit-content;
+ }
+ .image-wrappe{
+  margin-right: 2%;
+ }
+ p{
+  font-size: 25px;
+ }
+ h2{
+  font-size: 60px;
+ }
+ .bottomtext{
+  margin-left: 2%;
+  padding-left: 5px;
+  font-size: 25px;
+ }
+ .text{
+  margin-right: 10px;
+  padding-right: 5px;
+ }
+ .content {
+  gap: 0px;
+ }
+}
+
+
+
+@media screen and (min-width: 765px){
+  .content{
+    display: flex;
+
+  }
+
+}
+
+
+@media screen and (max-width: 765px){
+
+  .image-wrapper{
+    width: 100%;
+  }
+  .Getbtn{
+    margin-top: 10%;
+    margin-left: 6% ;
+  }
+
+}
+
